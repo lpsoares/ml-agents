@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MLAgents;
 
-public class FireEscapeAgent : Agent
+public class FireEscapeAgent2 : Agent
 {
     public GameObject ground;
     public GameObject area;
@@ -33,9 +33,9 @@ public class FireEscapeAgent : Agent
     {
         if (useVectorObs)
         {
-            float rayDistance = 20f;
+            float rayDistance = 10f;
             float[] rayAngles = { 0f, 50f, 90f, 130f, 180f };
-            string[] detectableObjects = { "orangeGoal", "redGoal", "orangeBlock", "redBlock", "wall" };   // AJUSTAR
+            string[] detectableObjects = { "orangeGoal", "redBlock", "wall" };   // AJUSTAR
             AddVectorObs(GetStepCount() / (float)agentParameters.maxStep);
             AddVectorObs(rayPer.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
         }
@@ -84,7 +84,9 @@ public class FireEscapeAgent : Agent
 
     public override void AgentAction(float[] vectorAction, string textAction)
     {
-        AddReward(-1f / (float)Math.Pow(Vector3.Distance(redBlock.transform.position, transform.position),2));
+        AddReward(-1f / agentParameters.maxStep);
+        AddReward(-0.1f / (float)Math.Pow(Vector3.Distance(redBlock.transform.position, transform.position),2));
+        //AddReward( Math.Pow(Vector3.Distance(redBlock.transform.position, transform.position), 2)<5?-1:0);
         MoveAgent(vectorAction);
     }
 
@@ -92,7 +94,7 @@ public class FireEscapeAgent : Agent
     {
         if (col.gameObject.CompareTag("orangeGoal"))
         {
-            SetReward(1f);
+            SetReward(10f);
             StartCoroutine(GoalScoredSwapGroundMaterial(academy.goalScoredMaterial, 0.5f));
             Done();
         }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MLAgents;
 
-public class FireEscapeAgent : Agent
+public class FireEscapeAgent4 : Agent
 {
     public GameObject ground;
     public GameObject area;
@@ -17,7 +17,8 @@ public class FireEscapeAgent : Agent
     Material groundMaterial;
     Renderer groundRenderer;
     FireEscapeAcademy academy;
-    int selection;
+    float touch;
+    float heat;
 
     public override void InitializeAgent()
     {
@@ -27,17 +28,23 @@ public class FireEscapeAgent : Agent
         agentRB = GetComponent<Rigidbody>();
         groundRenderer = ground.GetComponent<Renderer>();
         groundMaterial = groundRenderer.material;
+        touch = 0.0f;
+        heat = 0.0f;
     }
 
     public override void CollectObservations()
     {
         if (useVectorObs)
         {
-            float rayDistance = 20f;
+            float rayDistance = 10f;
             float[] rayAngles = { 0f, 50f, 90f, 130f, 180f };
-            string[] detectableObjects = { "orangeGoal", "redGoal", "orangeBlock", "redBlock", "wall" };   // AJUSTAR
-            AddVectorObs(GetStepCount() / (float)agentParameters.maxStep);
-            AddVectorObs(rayPer.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
+            string[] detectableObjects = { "orangeGoal", "redBlock", "wall" };
+            AddVectorObs(GetStepCount() / (float)agentParameters.maxStep); // sensação de tempo passando
+            AddVectorObs(rayPer.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f)); // sensação de visão em fumaça
+            AddVectorObs(agentRB.velocity);  // sensação de acelaração
+            AddVectorObs(touch); // sensação de toque
+            AddVectorObs(1.0f / (float)Math.Pow(Vector3.Distance(redBlock.transform.position, transform.position), 3));  // sensação de temperatura
+
         }
     }
 
@@ -84,18 +91,31 @@ public class FireEscapeAgent : Agent
 
     public override void AgentAction(float[] vectorAction, string textAction)
     {
-        AddReward(-1f / (float)Math.Pow(Vector3.Distance(redBlock.transform.position, transform.position),2));
+        float temp_inst = 1.0f / (float)Math.Pow(Vector3.Distance(redBlock.transform.position, transform.position), 3);
+        AddReward(-1f / agentParameters.maxStep);
+        AddReward(-temp_inst);
+        heat += temp_inst;
+        if(heat>10.0f)  // morreu queimado
+        {
+            AddReward(-10.0f);
+            Done();
+        }
         MoveAgent(vectorAction);
     }
 
     void OnCollisionEnter(Collision col)
     {
+        touch = 1.0f;
         if (col.gameObject.CompareTag("orangeGoal"))
         {
-            SetReward(1f);
+            SetReward(20f);
             StartCoroutine(GoalScoredSwapGroundMaterial(academy.goalScoredMaterial, 0.5f));
             Done();
         }
+    }
+    void OnCollisionExit(Collision other)
+    {
+        touch = 0.0f;
     }
 
     public override void AgentReset()
@@ -114,6 +134,9 @@ public class FireEscapeAgent : Agent
         agentRB.velocity *= 0f;
 
         orangeGoal.transform.position = new Vector3(0f, 0.5f, 10f) + area.transform.position;
-        
+
+        touch = 0.0f;
+        heat = 0.0f;
+
     }
 }
