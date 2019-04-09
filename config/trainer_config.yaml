@@ -316,7 +316,10 @@ FireEscapeLearning3:
 FireEscapeLearning4:
     max_steps: 5.0e5
 
-FireEscapeLearningX:5
+FireEscapeLearning5:
+    max_steps: 5.0e5
+
+FireEscapeLearningX:
     max_steps: 5.0e5
     batch_size: 1024
     beta: 5.0e-3
