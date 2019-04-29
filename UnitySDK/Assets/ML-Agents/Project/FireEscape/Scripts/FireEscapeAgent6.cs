@@ -14,7 +14,7 @@ public class FireEscapeAgent6 : Agent
     public GameObject wall2;
     public GameObject wall3;
     public GameObject wall4;
-    public bool useVectorObs;
+    //public bool useVectorObs;
     RayPerception rayPer;
     Rigidbody shortBlockRB;
     Rigidbody agentRB;
@@ -23,8 +23,9 @@ public class FireEscapeAgent6 : Agent
     FireEscapeAcademy academy;
     float touch;
     float heat;
-
     float air;
+
+    bool hasFire;
 
     public override void InitializeAgent()
     {
@@ -36,14 +37,16 @@ public class FireEscapeAgent6 : Agent
         groundMaterial = groundRenderer.material;
         touch = 0.0f;
         heat = 0.0f;
-
         air = 0.0f;
+
+        hasFire = true;   // TROCAR QUANDO IMPLEMENTAR
+
     }
 
     public override void CollectObservations()
     {
-        if (useVectorObs)
-        {
+        //if (useVectorObs)
+        //{
             float rayDistance = 10f;
             float[] rayAngles = { 0f, 50f, 90f, 130f, 180f };
             string[] detectableObjects = { "orangeGoal", "redBlock", "wall" };
@@ -51,9 +54,15 @@ public class FireEscapeAgent6 : Agent
             AddVectorObs(rayPer.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f)); // sensação de visão em fumaça
             AddVectorObs(agentRB.velocity);  // sensação de acelaração
             AddVectorObs(touch); // sensação de toque
-            AddVectorObs(1.0f / (float)Math.Pow(Vector3.Distance(fire.transform.position, transform.position), 3));  // sensação de temperatura
-
-        }
+            if(hasFire)
+            {
+                AddVectorObs(1.0f / (float)Math.Pow(Vector3.Distance(fire.transform.position, transform.position), 3));  // sensação de temperatura
+            } else
+            {
+                AddVectorObs(0.0f);  // sensação de temperatura
+            }
+            
+        //}
     }
 
     IEnumerator GoalScoredSwapGroundMaterial(Material mat, float time)
@@ -74,7 +83,7 @@ public class FireEscapeAgent6 : Agent
             dirToGo = transform.forward * Mathf.Clamp(act[0], -1f, 1f);
             rotateDir = transform.up * Mathf.Clamp(act[1], -1f, 1f);
         }
-        else
+        else // NESSE MOMENTO ENTRANDO AQUI !!!
         {
             int action = Mathf.FloorToInt(act[0]);
             switch (action)
@@ -99,12 +108,17 @@ public class FireEscapeAgent6 : Agent
 
     public override void AgentAction(float[] vectorAction, string textAction)
     {
-        float temp_inst = 0.05f / (float)Math.Pow(Vector3.Distance(fire.transform.position, transform.position), 3);
-        float aging = 0.2f / agentParameters.maxStep;
-        AddReward(-aging);
+        float temp_inst = 0.0f;
+        float smoke = 0.0f;
+        if (hasFire)
+        {
+            temp_inst = 0.04f / (float)Math.Pow(Vector3.Distance(fire.transform.position, transform.position), 3);
+            smoke = 0.2f / agentParameters.maxStep;
+        }    
+        AddReward(-smoke);
         AddReward(-temp_inst);
         heat += temp_inst;
-        air += aging;
+        air += smoke;
         if (heat > 0.8f)  // morreu queimado
         {
             AddReward(-0.8f);
@@ -125,10 +139,11 @@ public class FireEscapeAgent6 : Agent
     void OnCollisionEnter(Collision col)
     {
         touch = 1.0f;
-        if (col.gameObject.CompareTag("orangeGoal"))
+        if (col.gameObject.CompareTag("orangeGoal") && hasFire)
         {
             SetReward(1.0f);
             StartCoroutine(GoalScoredSwapGroundMaterial(academy.goalScoredMaterial, 0.5f));
+            print("conseguiu fugir");
             Done();
         }
     }
@@ -144,8 +159,6 @@ public class FireEscapeAgent6 : Agent
         {
             StartCoroutine(GoalScoredSwapGroundMaterial(academy.failMaterial, 0.5f));
         }
-
-        print("air = " + air + "   heat = " + heat);
 
         touch = 0.0f;
         heat = 0.0f;
