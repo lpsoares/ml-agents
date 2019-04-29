@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: e7a5211e9c3f1c949a0ebed3af6b558d
 ScriptedImporter:
   fileIDToRecycleName:
-    11400000: Assets/ML-Agents/Project/FireEscape/Brains/FireEscapeLearning4.nn
+    11400002: Assets/ML-Agents/Project/FireEscape/TFModels/FireEscapeLearning4.nn
   externalObjects: {}
   userData: 
   assetBundleName: 
