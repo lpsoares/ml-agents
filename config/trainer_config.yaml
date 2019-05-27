@@ -306,3 +306,8 @@ FireEscapeLearning6:
 
 CrowdLearning1:
     max_steps: 5.0e5
+
+CrowdNGLearningBrain:
+    batch_size: 100
+    buffer_size: 1000
+    max_steps: 30.0e4

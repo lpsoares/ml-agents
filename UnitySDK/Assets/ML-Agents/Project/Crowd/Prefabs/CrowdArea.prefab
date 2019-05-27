@@ -225,9 +225,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -485,11 +486,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &1522005997412512
 GameObject:
@@ -844,9 +850,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -1013,11 +1020,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &156195814421821593
 GameObject:
@@ -1249,11 +1261,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &208801140056211410
 GameObject:
@@ -1724,11 +1741,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &429301091157727911
 GameObject:
@@ -1869,11 +1891,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &443321861279597610
 GameObject:
@@ -2105,11 +2132,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &501726005233755869
 GameObject:
@@ -2154,9 +2186,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -2414,11 +2447,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &1029835835890116906
 GameObject:
@@ -2463,9 +2501,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -2632,11 +2671,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &1116803776822640257
 GameObject:
@@ -2777,11 +2821,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &1138517013079631735
 GameObject:
@@ -2826,9 +2875,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -2995,11 +3045,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &1226273685373117642
 GameObject:
@@ -3140,11 +3195,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &1236198528679538775
 GameObject:
@@ -3553,9 +3613,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -3717,9 +3778,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -3977,11 +4039,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &1607311942332863907
 GameObject:
@@ -4122,11 +4189,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &1723406554894072303
 GameObject:
@@ -4171,9 +4243,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -4340,11 +4413,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &1800782794017238167
 GameObject:
@@ -4480,9 +4558,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -5013,11 +5092,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &2019477485929139676
 GameObject:
@@ -5340,11 +5424,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &2157916421107804281
 GameObject:
@@ -5480,9 +5569,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -5649,11 +5739,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &2509585566000114657
 GameObject:
@@ -5698,9 +5793,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -5867,11 +5963,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &2727975460002160509
 GameObject:
@@ -6007,9 +6108,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -6176,11 +6278,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &2966039533252674182
 GameObject:
@@ -6225,9 +6332,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -6298,9 +6406,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -6467,11 +6576,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &3114357417104454738
 GameObject:
@@ -6607,9 +6721,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -6776,11 +6891,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &3371280667742245754
 GameObject:
@@ -6921,11 +7041,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &3411402426272783926
 GameObject:
@@ -7152,9 +7277,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -7225,9 +7351,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -7298,9 +7425,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -7467,11 +7595,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &3760515372730513228
 GameObject:
@@ -7698,9 +7831,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -7867,11 +8001,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &3866561288391312347
 GameObject:
@@ -8103,11 +8242,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &3892190947842542345
 GameObject:
@@ -8152,9 +8296,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -8316,9 +8461,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -8485,11 +8631,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &4025407044393331268
 GameObject:
@@ -8994,11 +9145,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &4300787376652399101
 GameObject:
@@ -9043,9 +9199,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -9212,11 +9369,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &4513131508913459516
 GameObject:
@@ -9261,9 +9423,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -9430,11 +9593,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &4558849277277870766
 GameObject:
@@ -9479,9 +9647,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -9552,9 +9721,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -9721,11 +9891,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &4745238137599749876
 GameObject:
@@ -9861,9 +10036,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -9934,9 +10110,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -10103,11 +10280,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &5017461280281799799
 GameObject:
@@ -10152,9 +10334,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -10321,11 +10504,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &5101202833573032688
 GameObject:
@@ -10370,9 +10558,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -10443,9 +10632,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -10612,11 +10802,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &5202380081333619341
 GameObject:
@@ -10661,9 +10856,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -10734,9 +10930,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -10994,11 +11191,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &5272646076861454216
 GameObject:
@@ -11043,9 +11245,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -11116,9 +11319,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -11285,11 +11489,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &5490136401304571690
 GameObject:
@@ -11334,9 +11543,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -11560,11 +11770,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &5575207299111566077
 GameObject:
@@ -11609,9 +11824,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -11778,11 +11994,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &5621556754653583321
 GameObject:
@@ -11923,11 +12144,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &5626965134784376606
 GameObject:
@@ -12068,11 +12294,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &5688830091558471068
 GameObject:
@@ -12117,9 +12348,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -12286,11 +12518,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &5724469849765114367
 GameObject:
@@ -12426,9 +12663,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -12595,11 +12833,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &6030132537244778067
 GameObject:
@@ -12826,9 +13069,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -13263,9 +13507,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -13336,9 +13581,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -13505,11 +13751,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &6479271175306038591
 GameObject:
@@ -13650,11 +13901,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &6496805855356664058
 GameObject:
@@ -13795,11 +14051,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &6584667686713187570
 GameObject:
@@ -13844,9 +14105,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -14104,11 +14366,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &6648404568580725652
 GameObject:
@@ -14153,9 +14420,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -14322,11 +14590,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &7004981773218383364
 GameObject:
@@ -14467,11 +14740,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &7048035611418091429
 GameObject:
@@ -14607,9 +14885,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -14680,9 +14959,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -15031,11 +15311,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &7284424900907834570
 GameObject:
@@ -15080,9 +15365,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -15153,9 +15439,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -15504,11 +15791,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
 --- !u!1 &7620412702487077276
 GameObject:
@@ -15644,9 +15936,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -15717,9 +16010,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -15881,9 +16175,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -16136,9 +16431,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -16396,11 +16692,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &8446749910150929085
 GameObject:
@@ -16445,9 +16746,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -16518,9 +16820,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -16687,11 +16990,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &8691515075181770023
 GameObject:
@@ -16827,9 +17135,10 @@ Camera:
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.5043253, g: 0.5998091, b: 0.64705884, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -16996,11 +17305,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &9202051277312943621
 GameObject:
@@ -17141,11 +17455,16 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1146052396420574}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: 17
 --- !u!1 &9222001177424871932
 GameObject:
@@ -17286,9 +17605,14 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: 64357f1a99e910241847dd912f0b728b, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 6
-  destiny: {fileID: 1031853240712416}
+  goals:
+  - 0
+  - 0
+  - 0
+  - 0
   initialPos: -17
