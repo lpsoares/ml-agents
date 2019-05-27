@@ -40,6 +40,14 @@ public class CrowdNGAgent : Agent
         // Agent velocity
         AddVectorObs(rBody.velocity.x);
         AddVectorObs(rBody.velocity.z);
+
+        // https://docs.unity3d.com/Manual/DirectionDistanceFromOneObjectToAnother.html
+        // Agent heading
+        // Gets a vector that points from the player's position to the target's.
+        var heading = Target.localPosition - this.transform.localPosition;
+        var distance = heading.magnitude;
+        var direction = heading / distance; // This is now the normalized direction.
+        AddVectorObs(direction);
     }
 
     public float speed = 10;
@@ -60,6 +68,9 @@ public class CrowdNGAgent : Agent
         {
             SetReward(1.0f);
             Done();
+        } else
+        {
+            SetReward(0.001f);
         }
 
     }
