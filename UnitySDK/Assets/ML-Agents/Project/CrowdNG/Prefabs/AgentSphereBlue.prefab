@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c242d72fd5c1ef4da2b938052e48041, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brain: {fileID: 11400000, guid: 6415309c0786ff74c8f36f2a81a2797b, type: 2}
+  brain: {fileID: 0}
   agentParameters:
     agentCameras: []
     agentRenderTextures: []
@@ -129,6 +129,11 @@ MonoBehaviour:
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 5
+  noCrowdBrain: {fileID: 11400000, guid: 967ee6da928d2a94e888f211849c7bac, type: 2}
+  fewCrowdBrain: {fileID: 11400000, guid: 71b80c359889fac45be84eba72653eb8, type: 2}
+  halfFullCrowdBrain: {fileID: 11400000, guid: 732f24b438e56ab45a8d538d34e02617, type: 2}
+  fullCrowdBrain: {fileID: 11400000, guid: e226b283ef5168543839f90e6f8bf524, type: 2}
+  agentPrefab: {fileID: 2418097134240191276}
   Target: {fileID: 7969616618205612616, guid: e318bd4bace5cf040a6048dc6f894b95, type: 3}
   isBlue: 1
   spawnArea: {fileID: 4874058010802630861, guid: bfd443bb79f6ed241b880d2b02ba9c7e,

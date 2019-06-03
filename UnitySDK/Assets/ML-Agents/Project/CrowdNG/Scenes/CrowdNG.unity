@@ -157,10 +157,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   broadcastHub:
     broadcastingBrains:
-    - {fileID: 11400000, guid: 6415309c0786ff74c8f36f2a81a2797b, type: 2}
-    - {fileID: 11400000, guid: 375d82f52b4026d4d990731a885c3e78, type: 2}
+    - {fileID: 11400000, guid: 967ee6da928d2a94e888f211849c7bac, type: 2}
+    - {fileID: 11400000, guid: 71b80c359889fac45be84eba72653eb8, type: 2}
+    - {fileID: 11400000, guid: 732f24b438e56ab45a8d538d34e02617, type: 2}
+    - {fileID: 11400000, guid: e226b283ef5168543839f90e6f8bf524, type: 2}
     _brainsToControl:
-    - {fileID: 11400000, guid: 6415309c0786ff74c8f36f2a81a2797b, type: 2}
+    - {fileID: 11400000, guid: 967ee6da928d2a94e888f211849c7bac, type: 2}
+    - {fileID: 11400000, guid: 71b80c359889fac45be84eba72653eb8, type: 2}
+    - {fileID: 11400000, guid: 732f24b438e56ab45a8d538d34e02617, type: 2}
+    - {fileID: 11400000, guid: e226b283ef5168543839f90e6f8bf524, type: 2}
   maxSteps: 0
   trainingConfiguration:
     width: 80
@@ -175,7 +180,15 @@ MonoBehaviour:
     timeScale: 1
     targetFrameRate: 60
   resetParameters:
-    resetParameters: []
+    resetParameters:
+    - key: number_of_agents
+      value: 1
+    - key: few_number_of_agents
+      value: 1
+    - key: half_full_number_of_agents
+      value: 5
+    - key: full_number_of_agents
+      value: 9
 --- !u!4 &801141048
 Transform:
   m_ObjectHideFlags: 0
@@ -445,7 +458,7 @@ PrefabInstance:
     - target: {fileID: 54573670806682009, guid: 66cb51fc29f868f41bd376da8ba023b1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 54573670806682019, guid: 66cb51fc29f868f41bd376da8ba023b1,
         type: 3}
@@ -460,7 +473,7 @@ PrefabInstance:
     - target: {fileID: 54573670137473742, guid: 66cb51fc29f868f41bd376da8ba023b1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 54573670137473780, guid: 66cb51fc29f868f41bd376da8ba023b1,
         type: 3}
@@ -560,7 +573,7 @@ PrefabInstance:
     - target: {fileID: 1224273844064179194, guid: 66cb51fc29f868f41bd376da8ba023b1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1224273844064179140, guid: 66cb51fc29f868f41bd376da8ba023b1,
         type: 3}
@@ -570,7 +583,7 @@ PrefabInstance:
     - target: {fileID: 1224273843992240271, guid: 66cb51fc29f868f41bd376da8ba023b1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1224273843992240305, guid: 66cb51fc29f868f41bd376da8ba023b1,
         type: 3}

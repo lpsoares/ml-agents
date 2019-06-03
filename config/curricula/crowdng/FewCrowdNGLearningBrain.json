@@ -1,0 +1,10 @@
+{
+    "measure" : "progress",
+    "thresholds" : [0.1, 0.3, 0.5],
+    "min_lesson_length" : 10,
+    "signal_smoothing" : true,
+    "parameters" :
+    {
+        "few_number_of_agents" : [1, 2, 3, 4]
+    }
+}

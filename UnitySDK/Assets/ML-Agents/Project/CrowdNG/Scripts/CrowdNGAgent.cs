@@ -6,12 +6,30 @@ using MLAgents;
 
 public class CrowdNGAgent : Agent
 {
+    // Depending on this value, the number of agents will be different
+    int configuration;
+    // Brain to use with 1 agent per color
+    public Brain noCrowdBrain;
+    // Brain to use with 1 to 4 agents per color
+    public Brain fewCrowdBrain;
+    // Brain to use with 5 to 8 agents per color
+    public Brain halfFullCrowdBrain;
+    // Brain to use with 9 to 12 agents per color
+    public Brain fullCrowdBrain;
+    public GameObject agentPrefab;
     public Transform Target;
+
+    CrowdNGAcademy academy;
+
+
     public bool isBlue;
      public GameObject spawnArea;
     Bounds spawnAreaBounds;
     Rigidbody rBody;
     public override void InitializeAgent () {
+        academy = FindObjectOfType<CrowdNGAcademy>();
+        configuration = Random.Range(0, 5);
+
         rBody = GetComponent<Rigidbody>();
         spawnAreaBounds = spawnArea.GetComponent<Collider>().bounds;
 
@@ -28,6 +46,8 @@ public class CrowdNGAgent : Agent
             // this.transform.localPosition = new Vector3( 0, 0, z);
 
             this.transform.localPosition = GetRandomSpawnPos();
+
+            configuration = Random.Range(0, 5);
         }
 
     }
@@ -156,5 +176,64 @@ public class CrowdNGAgent : Agent
     void OnCollisionStay(Collision col)
     {
         AddReward(-0.001f);
+    }
+
+    private void FixedUpdate()
+    {
+        if (configuration != -1)
+        {
+            ConfigureAgent(configuration);
+            configuration = -1;
+        }
+    }
+
+    /// <summary>
+    /// Configures the agent. Given an integer config, the wall will have
+    /// different height and a different brain will be assigned to the agent.
+    /// </summary>
+    /// <param name="config">Config. 
+    /// If 0 : No crowd and noCrowdBrain.
+    /// If 1:  Few agents and fewCrowdBrain.
+    /// If 2:  Many agents and halfFullCrowdBrain.
+    /// if 3 : A lot of agents and fullCrowdBrain. </param>
+    void ConfigureAgent(int config)
+    {
+        if (config == 0)
+        {
+            print("No crowd. Num agent " + academy.resetParameters["number_of_agents"] );
+            GiveBrain(noCrowdBrain);
+        }
+        else if (config == 1)
+        {
+            print("Few crowd. Num agent " + academy.resetParameters["few_number_of_agents"] );
+            GiveBrain(fewCrowdBrain);
+            // CreateAgent(agentPrefab, fewCrowdBrain, GetRandomSpawnPos(), Quaternion.identity);
+        }
+        else if (config == 2)
+        {
+            print("Half full crowd. Num agent " + academy.resetParameters["half_full_number_of_agents"] );
+            GiveBrain(halfFullCrowdBrain);
+            // CreateAgent(agentPrefab, halfFullCrowdBrain, GetRandomSpawnPos(), Quaternion.identity);
+        }
+        else
+        {
+            print("Full crowd. Num agent " + academy.resetParameters["full_number_of_agents"] );
+            GiveBrain(fullCrowdBrain);
+            // CreateAgent(agentPrefab, fullCrowdBrain, GetRandomSpawnPos(), Quaternion.identity);
+        }
+    }
+
+    private void CreateAgent(GameObject agentPrefab, Brain brain, Vector3 position, Quaternion orientation)
+    {
+        GameObject AgentObj = Instantiate(agentPrefab, position, orientation);
+        AgentObj.transform.SetParent(this.transform.parent);
+        Agent Agent = AgentObj.GetComponent<Agent>();
+        Agent.GiveBrain(brain);
+        Agent.AgentReset();
+    }
+
+    public override void AgentOnDone()
+    {
+        Destroy(gameObject);
     }
 }
