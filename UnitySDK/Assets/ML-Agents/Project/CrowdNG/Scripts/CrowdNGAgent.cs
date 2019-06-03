@@ -20,10 +20,11 @@ public class CrowdNGAgent : Agent
     public Transform Target;
 
     CrowdNGAcademy academy;
+    bool iAmClone = false;
 
 
     public bool isBlue;
-     public GameObject spawnArea;
+    public GameObject spawnArea;
     Bounds spawnAreaBounds;
     Rigidbody rBody;
     public override void InitializeAgent () {
@@ -48,6 +49,11 @@ public class CrowdNGAgent : Agent
             this.transform.localPosition = GetRandomSpawnPos();
 
             configuration = Random.Range(0, 5);
+
+            if (iAmClone)
+            {
+                Done();
+            }
         }
 
     }
@@ -207,7 +213,7 @@ public class CrowdNGAgent : Agent
         {
             print("Few crowd. Num agent " + academy.resetParameters["few_number_of_agents"] );
             GiveBrain(fewCrowdBrain);
-            // CreateAgent(agentPrefab, fewCrowdBrain, GetRandomSpawnPos(), Quaternion.identity);
+            CreateAgent(agentPrefab, fewCrowdBrain, GetRandomSpawnPos(), Quaternion.identity);
         }
         else if (config == 2)
         {
@@ -225,15 +231,24 @@ public class CrowdNGAgent : Agent
 
     private void CreateAgent(GameObject agentPrefab, Brain brain, Vector3 position, Quaternion orientation)
     {
+        if (iAmClone)
+        {
+            return;
+        }
+
         GameObject AgentObj = Instantiate(agentPrefab, position, orientation);
         AgentObj.transform.SetParent(this.transform.parent);
-        Agent Agent = AgentObj.GetComponent<Agent>();
-        Agent.GiveBrain(brain);
-        Agent.AgentReset();
+        CrowdNGAgent agent = AgentObj.GetComponent<CrowdNGAgent>();
+        agent.iAmClone = true;
+        agent.GiveBrain(brain);
+        agent.AgentReset();
     }
 
     public override void AgentOnDone()
     {
-        Destroy(gameObject);
+        if (iAmClone)
+        {
+            Destroy(gameObject);
+        }
     }
 }

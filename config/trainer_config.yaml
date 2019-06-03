@@ -311,3 +311,23 @@ CrowdNGLearningBrain:
     batch_size: 100
     buffer_size: 1000
     max_steps: 30.0e4
+
+NoCrowdNGLearningBrain:
+    batch_size: 100
+    buffer_size: 1000
+    max_steps: 5.0e4
+
+FewCrowdNGLearningBrain:
+    batch_size: 100
+    buffer_size: 1000
+    max_steps: 5.0e4
+
+HalfFullCrowdNGLearningBrain:
+    batch_size: 100
+    buffer_size: 1000
+    max_steps: 5.0e4
+
+FullCrowdNGLearningBrain:
+    batch_size: 100
+    buffer_size: 1000
+    max_steps: 5.0e4 
